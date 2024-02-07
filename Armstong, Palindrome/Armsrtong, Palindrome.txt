@@ -1,0 +1,212 @@
+1)reverse number :
+input :64784 
+output :48746
+
+
+#include<stdio.h>
+int main()
+{
+    int num=64784;
+    int rem, sum=0;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("The reverse value is : %d", sum);
+    return 0;
+}
+
+
+Q)user input :
+a :armstrong number user input 
+
+p :pallindrome number 
+
+s :swap with third vairable 
+
+w :swap without third variable 
+
+m :month 
+
+q :week 
+
+
+
+#include<stdio.h>
+int
+main ()
+{
+  char a;
+  printf ("enter any character : ");
+  scanf (" %c", &a);
+  if (a == 'a')
+	{
+	  int num;
+	  printf ("Enter any value : ");
+	  scanf ("%d", &num);
+	  int rem, sum = 0;
+	  int temp = num;
+	  while (num > 0)
+		{
+		  rem = num % 10;
+		  sum = sum + rem * rem * rem;
+		  num = num / 10;
+		}
+	  if (temp == sum)
+		{
+		  printf ("This is Armstrong number");
+		}
+	  else
+		{
+		  printf ("Not a Armstrong number");
+		}
+	}
+  else if (a == 'p')
+	{
+	  int num;
+	  printf ("Enter any value :");
+	  scanf ("%d", &num);
+	  int rem, sum = 0;
+	  int temp = num;
+	  while (num > 0)
+		{
+		  rem = num % 10;
+		  sum = sum * 10 + rem;
+		  num = num / 10;
+		}
+	  printf ("the reverse value is %d\n", sum);
+	  if (temp == sum)
+		{
+		  printf ("Palindrome Number");
+		}
+	  else
+		{
+		  printf ("Not a Palindrome Number");
+		}
+	}
+  else if (a == 's')
+	{
+	  int a, b, c;
+	  printf ("enter value of a & b: ");
+	  scanf ("%d %d", &a, &b);
+	  c = a;
+	  a = b;
+	  b = c;
+	  printf ("Value of a %d\n", a);
+	  printf ("Value of b %d", b);
+	}
+  else if (a == 'w')
+	{
+	  int a, b;
+	  printf ("Enter value of a & b :");
+	  scanf ("%d %d", &a, &b);
+	  a = a + b;
+	  b = a - b;
+	  a = a - b;
+	  printf ("Value of a %d\n", a);
+	  printf ("Value of b %d", b);
+	}
+  else if (a == 'm')
+	{
+	  int a;
+	  printf ("Enter any value : ");
+	  scanf ("%d", &a);
+	  if (a == 1)
+		{
+		  printf ("January");
+		}
+	  else if (a == 2)
+		{
+		  printf ("February");
+		}
+	  else if (a == 3)
+		{
+		  printf ("March");
+		}
+	  else if (a == 4)
+		{
+		  printf ("April");
+		}
+	  else if (a == 5)
+		{
+		  printf ("May");
+		}
+	  else if (a == 6)
+		{
+		  printf ("June");
+		}
+	  else if (a == 7)
+		{
+		  printf ("July");
+		}
+	  else if (a == 8)
+		{
+		  printf ("August");
+		}
+	  else if (a == 9)
+		{
+		  printf ("September");
+		}
+	  else if (a == 10)
+		{
+		  printf ("October");
+		}
+	  else if (a == 11)
+		{
+		  printf ("November");
+		}
+	  else if (a == 12)
+		{
+		  printf ("December");
+		}
+	  else
+		{
+		  printf ("Value Doesn't match");
+		}
+	}
+  else if (a == 'q')
+	{
+	  int a;
+	  printf ("Enter any value : ");
+	  scanf ("%d", &a);
+	  if (a == 1)
+		{
+		  printf ("Sunday");
+		}
+	  else if (a == 2)
+		{
+		  printf ("Monday");
+		}
+	  else if (a == 3)
+		{
+		  printf ("Tuesday");
+		}
+	  else if (a == 4)
+		{
+		  printf ("Wednesday");
+		}
+	  else if (a == 5)
+		{
+		  printf ("Thursday");
+		}
+	  else if (a == 6)
+		{
+		  printf ("Friday");
+		}
+	  else if (a == 7)
+		{
+		  printf ("Saturday");
+		}
+	  else
+		{
+		  printf ("Value Doesn't match");
+		}
+	}
+  else
+	{
+	  printf ("Value doesn't match");
+	}
+  return 0;
+}
