@@ -1,0 +1,772 @@
+1) two number maximum 
+(if else)
+
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("Enter value of a and b");
+    scanf("%d %d", &a, &b);
+    if (a>b){
+        printf("A is greater");
+    }
+    else
+    {
+        printf("B is greater");
+    }
+    return 0;
+}
+
+2) three number maximum
+
+#include<stdio.h>
+int main(){
+    int a,b,c;
+    printf("Enter value of a and b and c");
+    scanf("%d %d %d", &a, &b, &c);
+    if (a>b && a>c){
+        printf("A is greater");
+    }
+    else if(b>a && b>c)
+    {
+        printf("B is greater");
+    }
+    else
+    {
+        printf("c is greter");
+    }
+    return 0;
+}
+
+
+3)five number maximum 
+
+
+#include<stdio.h>
+int main(){
+    int a,b,c,d,e;
+    printf("Enter value of a and b and c: and d and e");
+    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+    if (a>b && a>c && a>d && a>e){
+        printf("A is greater");
+    }
+    else if(b>a && b>c && b>d && d>e)
+    {
+        printf("B is greater");
+    }
+    else if(c>a && c>b && c>d && c>e)
+    {
+        printf("c is greater");
+    }
+    else if(d>a && d>b && d>c && d>e)
+    {
+        printf("d is greater");
+    }else
+    {
+        printf("e is greater");
+    }
+    return 0;
+}
+
+
+4)10 number maximum 
+
+#include<stdio.h>
+int main(){
+    int a,b,c,d,e,f,g,h,i,j;
+    printf("Enter value of a,b,c,d,e,f,g,h,i,j");
+    scanf("%d %d %d %d %d %d %d %d %d %d", &a, &b, &c, &d, &e, &f, &g, &h, &i, &j);
+    if (a>b && a>c && a>d && a>e && a>f && a>g && a>h && a>i && a>j){
+        printf("A is greater");
+    }
+    else if(b>a && b>c && b>d && d>e && d>f && d>g && d>h && d>i && d>j)
+    {
+        printf("B is greater");
+    }
+    else if(c>a && c>b && c>d && c>e && c>f && c>g && c>h && c>i && c>j)
+    {
+        printf("C is greater");
+    }
+    else if(d>a && d>b && d>c && d>e && d>f && d>g && d>h && d>i && d>j)
+    {
+        printf("D is greater");
+    }
+    else if(e>a && e>b && e>c && e>d && e>f && e>g && e>h && e>i && e>j)
+    {
+        printf("E is greater");
+    }
+    else if(f>a && f>b && f>c && f>d && f>g && f>h && f>i && f>e && f>j)
+    {
+        printf("F is greater");
+    }
+    else if(g>a && g>b && g>c && g>d && g>e && g>f && g>h && g>i && g>j)
+    {
+        printf("G is greater");
+    }
+    else if(h>a && h>b && h>c && h>d && h>e && h>f && h>g && h>i && h>j)
+    {
+        printf("H is greater");
+    }
+    else if(i>a && i>b && i>c && i>d && i>e && i>f && i>g && i>h && i>j)
+    {
+        printf("I is greater");
+    }
+    else
+    {
+        printf("J is greater");
+    }
+    
+    return 0;
+}
+
+
+5) 1 :one 
+2 :two 
+3 :three
+4 :four 
+5 :five 
+
+not match
+
+
+#include<stdio.h>
+int main(){
+    int a;
+    printf("Enter any Number: ");
+    scanf("%d", &a);
+    if (a==1){
+    printf("one");
+    }
+    else if(a==2){
+        printf("two");
+    }
+    else if(a==3){
+        printf("three");
+    }
+    else if(a==4){
+        printf("four");
+    }
+    else if(a==5){
+        printf("five");
+    }
+    else{
+        printf("Value doesn't match");
+    }
+    
+    return 0;
+}
+
+
+6)1---->7
+1:sun
+2:mon
+3:tue
+4:wed
+5:th
+6:fri
+7:sat
+
+not match 
+
+
+#include<stdio.h>
+int
+main ()
+{
+  int a;
+  printf ("Enter any value : ");
+  scanf ("%d", &a);
+  if (a == 1)
+	{
+	  printf ("Sunday");
+	}
+  else if (a == 2)
+	{
+	  printf ("Monday");
+	}
+  else if (a == 3)
+	{
+	printf ("Tuesday");
+	}
+  else if (a == 4)
+	{
+	printf ("Wednesday");
+	}
+  else if (a == 5)
+	{
+	printf ("Thursday");
+	}
+  else if (a == 6)
+	{
+	printf ("Friday");
+	}
+  else if(a == 7)
+	{
+	    printf("Saturday");
+	}
+  else{
+      printf("Value Doesn't matc");
+  }
+  return 0;
+}
+
+
+7)month 
+1:jan
+2:feb
+3:march
+total 12
+
+13 :not match
+
+
+#include<stdio.h>
+int
+main ()
+{
+  int a;
+  printf ("Enter any value : ");
+  scanf ("%d", &a);
+  if (a == 1)
+	{
+	  printf ("January");
+	}
+  else if (a == 2)
+	{
+	  printf ("February");
+	}
+  else if (a == 3)
+	{
+	printf ("March");
+	}
+  else if (a == 4)
+	{
+	printf ("April");
+	}
+  else if (a == 5)
+	{
+	printf ("May");
+	}
+  else if (a == 6)
+	{
+	printf ("June");
+	}
+  else if(a == 7)
+	{
+	    printf("July");
+	}
+  else if(a == 8)
+	{
+	    printf("August");
+	}
+  else if(a == 9)
+	{
+	    printf("September");
+	}
+  else if(a == 10)
+	{
+	    printf("October");
+	}
+  else if(a == 11)
+	{
+	    printf("November");
+	}
+  else if(a == 12)
+	{
+	    printf("December");
+	}	
+  else{
+      printf("Value Doesn't matc");
+  }
+  return 0;
+}
+
+
+8)a:apple 
+b:ball
+c :cat
+d:dog 
+
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("enter any character");
+    scanf("%c", &a);
+    if (a=='a'){
+        printf("Apple");
+    }
+    else if(a=='b'){
+        printf("Banana");
+    }
+    else if(a=='c'){
+        printf("Cat");
+    }
+    else if(a=='d'){
+        printf("Bog");
+    }
+    else{
+        printf("Value doesn't match");
+    }
+    return 0;
+}
+
+
+9)user input 
+
+a :addition 
+s :substraction 
+m :multiply 
+d :divide 
+o :modular
+
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("enter any character : ");
+    scanf("%c", &a);
+    int b,c,d;
+    printf("Enter 2 Values : ");
+    scanf("%d %d", &b, &c);
+    if (a=='a')
+    {
+     d=b+c;
+     printf("Addition of two values : %d", d);
+    }
+    else if(a=='s')
+    {
+        d=b-c;
+        printf("Subtraction of the values : %d", d);
+    }
+    else if(a=='m')
+    {
+        d=b*c;
+        printf("Multiplication of the values : %d", d);
+    }
+    else if(a=='d')
+    {
+        d=b-c;
+        printf("Division of the values : %d", d);
+    }
+    else if(a=='o')
+    {
+        d=b%c;
+        printf("Modular of the values : %d", d);
+    }
+    else{
+        printf("Value doen't match");
+    }
+    return 0;
+}
+
+
+10)voter id :
+user input age :check age 18 se jyada hey 
+age>18
+
+
+#include<stdio.h>
+int main(){
+    int age;
+    printf("Enter your age:");
+    scanf("%d", &age);
+    if (age>=18)
+    {
+        int weight;
+        printf("Enter your weight : ");
+        scanf("%d", &weight);
+        if(weight>=50){
+            printf("You are eligible");
+        }
+        else
+        {
+            printf("Enter weight less than 50");
+        }
+    }
+    else {
+        printf("you are not eligible");
+    }
+}
+
+
+11)code :
+user input character :
+m :
+	inside :check a number month 
+
+w :
+	inside :check a number week
+
+e :
+	inside :check a number is even 
+		4 :even number 
+		3 :this number is not even 
+o :
+	inside :check a number odd 
+
+c :
+	inside :check a number is calculator
+	a :addition
+	s :sub
+	m :mult
+	d :div
+	o :modular 
+
+a :
+	age :voeter id valid or not 
+
+v :
+	vowel and consoant 
+
+t :
+	three number maximum check
+
+
+
+
+#include<stdio.h>
+int
+main ()
+{
+  char word;
+  printf ("enter any character: ");
+  scanf ("%c", &word);
+  if (word == 'a')
+	{
+	  int a;
+	  printf ("enter any value :");
+	  scanf ("%d", &a);
+	  if (a == 1)
+		{
+		  printf ("January");
+		}
+	  else if (a == 2)
+		{
+		  printf ("February");
+		}
+	  else if (a == 3)
+		{
+		  printf ("March");
+		}
+	  else if (a == 4)
+		{
+		  printf ("April");
+		}
+	  else if (a == 5)
+		{
+		  printf ("May");
+		}
+	  else if (a == 6)
+		{
+		  printf ("June");
+		}
+	  else if (a == 7)
+		{
+		  printf ("July");
+		}
+	  else if (a == 8)
+		{
+		  printf ("August");
+		}
+	  else if (a == 9)
+		{
+		  printf ("September");
+		}
+	  else if (a == 10)
+		{
+		  printf ("October");
+		}
+	  else if (a == 11)
+		{
+		  printf ("November");
+		}
+	  else if (a == 12)
+		{
+		  printf ("December");
+		}
+	  else
+		{
+		  printf ("Value Doesn't match");
+		}
+	}
+  else if (word == 'w')
+	{
+	  int a;
+	  printf ("Enter any value : ");
+	  scanf ("%d", &a);
+	  if (a == 1)
+		{
+		  printf ("Sunday");
+		}
+	  else if (a == 2)
+		{
+		  printf ("Monday");
+		}
+	  else if (a == 3)
+		{
+		  printf ("Tuesday");
+		}
+	  else if (a == 4)
+		{
+		  printf ("Wednesday");
+		}
+	  else if (a == 5)
+		{
+		  printf ("Thursday");
+		}
+	  else if (a == 6)
+		{
+		  printf ("Friday");
+		}
+	  else if (a == 7)
+		{
+		  printf ("Saturday");
+		}
+	  else
+		{
+		  printf ("Value Doesn't matc");
+		}
+	}
+  else if (word == 'e')
+	{
+	  int a;
+	  printf ("Enter any value: ");
+	  scanf ("%d", &a);
+	  if (a % 2 == 0)
+		{
+		  printf ("Even Value");
+		}
+	  else
+		{
+		  printf ("Not even");
+		}
+	}
+  else if (word == 'o')
+	{
+	  int a;
+	  printf ("Enter any value:");
+	  scanf ("%d", &a);
+	  if (a % 2 == 1)
+		{
+		  printf ("Odd Number");
+		}
+	  else
+		{
+		  printf ("Not odd");
+		}
+	}
+  else if (word == 'c')
+	{
+	  char a;
+	  printf ("enter  character : ");
+	  scanf (" %c", &a);
+	  int b, c, d;
+	  printf ("Enter any values :");
+	  scanf ("%d %d", &b, &c);
+	  if (a == 'a')
+		{
+		  d = b + c;
+		  printf ("%d", d);
+		}
+	  else if (a == 's')
+		{
+		  d = b - c;
+		  printf ("Subtraction of the values : %d", d);
+		}
+	  else if (a == 'm')
+		{
+		  d = b * c;
+		  printf ("Multiplication of the values : %d", d);
+		}
+	  else if (a == 'd')
+		{
+		  d = b - c;
+		  printf ("Division of the values : %d", d);
+		}
+	  else if (a == 'o')
+		{
+		  d = b % c;
+		  printf ("Modular of the values : %d", d);
+		}
+	  else
+		{
+		  printf ("Value doen't match");
+		}
+	}
+	else if (word=='m')
+	{
+	    int age;
+	    printf("Enter your age");
+	    scanf("%d", &age);
+	    if (age>=18)
+	    {
+	        printf("You are eligible");
+	    }
+	    else{
+	        printf("you are not eligible");
+	    }
+	}
+	else if(word=='v'){
+	    char a;
+	    printf("Enter any character : ");
+	    scanf(" %c", &a);
+	    if (a=='a' || a=='e' || a=='i' || a=='o' || a=='u')
+	    {
+	        printf("Vowel");
+	    }
+	    else{
+	            printf("consonant");
+	    }
+	}
+	else if(word=='t'){
+	    int a,b,c;
+	    printf("Enter values of a,b and c :");
+	    scanf("%d %d %d", &a, &b, &c);
+	    if (a>b && b>c){
+	        printf("a is greater");
+	    }
+	    else if(b>a && b>c){
+	        printf("b is greater");
+	    }
+	    else{
+	        printf("c is greater");
+	    }
+	}
+	else{
+	    printf("Value doesn't match");
+	}
+
+}
+
+
+
+10)30---56 :this value between 30 to 56 
+78---89 :this value between 78 to 89
+12---->29 :this value between 12 to 34
+
+else :not match  
+
+
+#include<stdio.h>
+int main(){
+    int a;
+    printf("Enter any number : ");
+    scanf("%d", &a);
+    if (a>=30 && a<=56){
+        printf("this value is between 30 and 56");
+    }
+    else if(a>=78 && a<=89){
+        printf("this value is between 78 and 89");
+    }
+    else if (a>=12 && a<=29){
+        printf("this value is between 12 and 29");
+    }
+    else{
+        printf("value doesn't match");
+    }
+    return 0;
+}
+
+
+11)99---->80 A
+70--->80 B
+60-----70 C
+D grade 
+
+
+#include<stdio.h>
+int main(){
+    int a;
+    printf("Enter your percentage : ");
+    scanf("%d", &a);
+    if (a>=80 && a<=90){
+        printf("A grade");
+    }
+    else if(a>=70 && a<=79){
+        printf("B grade");
+    }
+    else if (a>=60 && a<=69){
+        printf("C grade");
+    }
+    else{
+        printf("D grade");
+    }
+    return 0;
+}
+
+
+12)
+user input character : 
+area :a 
+	character :
+	t :traingle 
+	s :square 
+	r :rectangle 
+	c :circle 
+
+volume :v 
+	character :
+	cylinder :traingle 
+	cuboid :square 
+	sphere :rectangle 
+	circumference of circle :circle 
+
+not match 
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("Enter any character : ");
+    scanf(" %c", &a);
+    if (a=='a')
+{
+    char i;
+    printf("Enter any character : ");
+    scanf(" %c", &i);
+    if (a=='t'){
+        int b,h,c;
+        printf("Enter base of the triangle : ");
+        scanf("%d" ,  & b);
+        printf("Enter height of the triangle : ");
+        scanf("%d" ,  & h);
+        c=0.5*b*h;
+        printf("Area of triangle is %d", c);
+    }
+    else if(a=='r'){
+        int l,b,area;
+        printf("Enter length : ");
+        scanf("%d" ,&l);
+        printf("Enter breadth : ");
+        scanf("%d" ,&b);
+        area=l*b;
+        printf("Area of rectangle : %d", area);
+    }
+    else if(a=='c'){
+        float r,c;
+        printf("Enter radius of circle : ");
+        scanf("%f" ,  &r);
+        c=3.14*r*r;
+        printf("Area of circle is %f", c);
+    }
+    else if(a=='s')
+    {
+        int s,area;
+        printf("Enter side :");
+        scanf("%d", &s);
+        area=s*s;
+        printf("area of square : %d", area);
+    }
+    
+}
+else {
+    printf("value doesn't match");
+}
+    return 0;
+}
+
+
+
+
+
+
+

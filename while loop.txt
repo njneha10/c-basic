@@ -1,0 +1,278 @@
+1)1---->5 number print
+
+#include<stdio.h>
+int main(){
+    int a=1;
+    while(a<=5){
+        printf("%d ", a);
+        a++;
+    }
+    return 0;
+}
+
+2)1---->10 number print 
+
+#include<stdio.h>
+int main(){
+    int a=1;
+    while(a<=10){
+        printf("%d ", a);
+        a++;
+    }
+    return 0;
+}
+
+3)1--->100 number print 
+
+#include<stdio.h>
+int main(){
+    int a=1;
+    while(a<=100){
+        printf("%d ", a);
+        a++;
+    }
+    return 0;
+}
+
+4)50----->500 number print
+
+#include<stdio.h>
+int main(){
+    int a=5;
+    while(a<=500){
+        printf("%d ", a);
+        a++;
+    }
+    return 0;
+}
+
+
+5)12--->89 number print 
+
+#include<stdio.h>
+int main(){
+    int a=12;
+    while(a<=89){
+        printf("%d ", a);
+        a++;
+    }
+    return 0;
+}
+
+6)5--->1
+
+#include<stdio.h>
+int main(){
+    int a=5;
+    while(a>=1){
+        printf("%d ", a);
+        a--;
+    }
+    return 0;
+}
+
+
+
+7)10----1
+
+#include<stdio.h>
+int main(){
+    int a=10;
+    while(a>=1){
+        printf("%d ", a);
+        a--;
+    }
+    return 0;
+}
+
+
+8)100--->1
+
+#include<stdio.h>
+int main(){
+    int a=100;
+    while(a>=1){
+        printf("%d ", a);
+        a--;
+    }
+    return 0;
+}
+
+
+9)50---->1
+
+#include<stdio.h>
+int main(){
+    int a=50;
+    while(a>=1){
+        printf("%d ", a);
+        a--;
+    }
+    return 0;
+}
+
+
+10)89---23
+
+
+#include<stdio.h>
+int main(){
+    int a=89;
+    while(a>=23){
+        printf("%d ", a);
+        a--;
+    }
+    return 0;
+}
+
+11)a :
+	1--->10 value print 
+
+b:
+	10---->1 value print 
+
+c:
+	23----->78 value print 
+
+
+d :
+	89--->78 value print 
+
+g :
+	to check a gender 
+	m :male 
+	f :female 
+	not match 
+
+v :check voter id 
+
+e :vowel and consonant check 
+
+s :swap number 
+	w :with third variable 
+	o :without third variable 
+
+
+
+#include<stdio.h>
+int main(){
+    char a;
+    printf("Enter any character  : ");
+    scanf("%c", &a);
+    if( a=='a')
+    {
+        int a;
+        while(a<=5)
+        {
+        printf("%d ", a);
+        a++;
+        }
+    
+    }
+    else if(a=='b')
+    {
+        int i=1;
+        while(i<=10)
+        {
+            printf("%d ", i);
+            i++;
+        }
+    }
+    else if(a=='c')
+        {
+        int i=23;
+        while(i<=78)
+        {
+            printf("%d ", i);
+            i++;
+        }
+    }
+    else if(a=='d')
+    {
+        int i =89;
+        while(i>=78)
+        {
+            printf("%d ", i);
+            i--;
+        }
+    }
+    else if(a=='g')
+    {
+        char a;
+        printf("enter any character :");
+        scanf(" %c", &a);
+        if (a=='m')
+        {
+            printf("Male");
+            
+        }
+        else if(a=='f')
+        {
+            printf("Female");
+        }
+        else
+        {
+            printf("Value doesn't match");
+        }
+    }
+    else if(a=='v')
+    {
+        int age;
+        printf("Enter your age:");
+        scanf("%d", &age);
+        if (age>=18)
+        {
+            printf("Valid");
+        }
+        else
+        {
+            printf("Invalid");
+        }
+    }
+    else if(a=='e')
+    {
+            char a;
+            printf("Enter any character : ");
+            scanf(" %c", &a);
+            if (a=='a' || a=='e' || a=='i' || a=='o' || a=='u')
+	    {
+	        printf("Vowel");
+	    }
+	    else{
+	            printf("consonant");
+	    }
+    }
+    else if(a=='s')
+    {
+        char i;
+        printf("Enter any character : ");
+        scanf(" %c", &i);
+        if (i=='w')
+        {
+            int a,b,c;
+            printf("Enter any 2 values :  ");
+            scanf("%d %d", &a, &b);
+            c=a;
+            a=b;
+            b=c;
+            printf("Value of a %d\t ", a);
+            printf("Value of b %d", b);
+        }
+        else if(i=='o')
+        {
+            int a,b;
+            printf("Enter value of a and b:");
+            scanf("%d %d", &a, &b);
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            printf("Value of a %d\t ", a);
+            printf("Value of b %d", b);
+        }
+        else{
+            printf("Value doesn't match");
+        }
+    }
+
+    return 0;
+}
