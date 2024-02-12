@@ -1,0 +1,261 @@
+1)
+add() :23+89
+sub() :a-b
+div() :a/b
+multi() :a*b
+
+user input 
+
+
+#include<stdio.h>
+void add();
+void sub();
+void mul();
+void divi();
+int main(){
+    add();
+    sub();
+    mul();
+    divi();
+    
+    return 0;
+}
+void add(){
+    int a,b,c;
+    printf("Enter value of a and b : ");
+    scanf("%d %d", &a, &b);
+    c=a+b;
+    printf("Addition of values : %d\n", c);
+}
+void sub(){
+    int a,b,c;
+    printf("Enter value of a and b : ");
+    scanf("%d %d", &a, &b);
+    c=a-b;
+    printf("Subtraction of values : %d\n", c);
+}
+void mul(){
+    int a,b,c;
+    printf("Enter value of a and b : ");
+    scanf("%d %d", &a, &b);
+    c=a*b;
+    printf("Multiplication of values : %d\n", c);
+}
+void divi(){
+    int a,b,c;
+    printf("Enter value of a and b : ");
+    scanf("%d %d", &a, &b);
+    c=a/b;
+    printf("Divison of values : %d\n", c);
+}
+
+
+
+
+2)
+swap() :number swap 
+voter():age check 
+vowel() :
+gender() 
+three() :three number maximum 
+factorial() :
+pallindrome():
+armstrong():
+reverse():
+sum():
+count():
+even(): 1--->100 even number 
+fibonacci():
+table():
+
+user input 
+
+
+
+#include<stdio.h>
+void swap();
+void voter();
+void vowel();
+void gender();
+void max();
+void fact();
+void pallindrome();
+void armstrong();
+void reverse();
+void sum();
+
+
+int main(){
+    swap();
+    voter();
+    vowel();
+    gender();
+    max();
+    fact();
+    pallindrome();
+    armstrong();
+    reverse();
+    sum();
+    return 0;
+}
+void swap(){
+    int a,b;
+    printf("Enter the values of a and b : ");
+    scanf("%d %d", &a, &b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("value of a : %d\n",a);
+     printf("value of b : %d\n", b);
+}
+
+void voter(){
+    int age;
+    printf("enter your age : ");
+    scanf("%d", &age);
+    if(age<18)
+    {
+        printf("you are not eligible\n");
+    }
+    else{
+        printf("you are eligible\n");
+    }
+}
+void vowel(){
+    char a;
+    printf("enter any character : ");
+    scanf(" %c", &a);
+    if(a=='a'|| a=='e'||a=='i'||a=='o'||a=='u'){
+        printf("Vowel\n");
+    }
+    else{
+        printf("consonant\n");
+    }
+}
+
+void gender(){
+    char a;
+    printf("Enter m or f");
+    scanf(" %c", &a);
+    if(a=='m'){
+        printf("Male");
+    }
+        else if(a=='f'){
+            printf("Female\n");
+        }
+    else{
+        printf("Not match\n");
+    }
+}
+void max(){
+    int a,b,c;
+    printf("Enter any 3 values");
+    scanf("%d %d %d", &a, &b, &c);
+    if(a>b && a>c){
+        printf("A is greater\n");
+    }
+    else if(b>a && b>c){
+        printf("B is greater\n");
+    }
+    else{
+        printf("C is greater\n");
+    }
+}
+void fact(){
+    int fact=1;
+    int num;
+    printf("enter any value : ");
+    scanf("%d", &num);
+    for(int i=1;i<=num;i++){
+        fact=fact*i;
+    }
+    printf("factorial of this value : %d\n", fact);
+}
+void pallindrome(){
+    int num;
+    printf("Enter any value : ");
+    scanf("%d", &num);
+    int rem,sum=0;
+    int temp=num;
+    for(int i=1;i<=num;i++){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d\n", sum);
+    if(sum==temp)
+    {
+        printf("This value is pallindrome\n");
+    }
+    else{
+        printf("not a pallindrome\n");
+    }
+}
+
+void armstrong(){
+    
+	  int num;
+	  printf ("Enter any value : ");
+	  scanf ("%d", &num);
+	  int rem, sum = 0;
+	  int temp = num;
+	  while (num > 0)
+		{
+		  rem = num % 10;
+		  sum = sum + rem * rem * rem;
+		  num = num / 10;
+		}
+	  if (temp == sum)
+		{
+		  printf ("This is Armstrong number\n");
+		}
+	  else
+		{
+		  printf ("Not a Armstrong numbe\n");
+		}
+
+}
+
+void reverse(){
+    int num;
+    printf("Enter any value : ");
+    scanf("%d", &num);
+    int rem,sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    printf("%d\n", sum);
+}
+
+void sum(){
+    int a,b,c;
+    printf("enter values of a & b: ");
+    scanf("%d %d", &a, &b);
+    c=a+b;
+    printf("The sum is : %d\n", c);
+}
+
+
+void count(){
+    int num;
+    int count=0;
+    printf("Enter any value : ");
+    scanf("%d", &num);
+    while(num>0){
+        count++;
+        num=num/10;
+    }
+    printf("%d", count);
+}
+
+
+void even(){
+    for(int i=1;i<=100;i++){
+        if(i%2==0){
+            printf("%d", i);
+        }
+        
+        }
+    }
